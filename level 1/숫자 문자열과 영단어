@@ -4,7 +4,9 @@
 "2three45sixseven" -> 234567
 "123" -> 123
 '''
-def solution(s):
+
+# first try. wrong solution
+def pre_solution (s):
   number = ['zero','one','two','three','four','five','six','seven','eight','nine']
   int_number = ['0','1','2','3','4','5','6','7','8','9']
   i = 0
@@ -34,3 +36,9 @@ def solution(s):
         break
   return int("".join(answer))
 
+# second try. right solution
+def solution(s):
+  number = ['zero','one','two','three','four','five','six','seven','eight','nine']
+  for i in number:
+    s = s.replace(i,str(number.index(i)))
+  return int(s)
