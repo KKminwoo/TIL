@@ -50,7 +50,7 @@ using std::cin; // cin을 사용할 수 있게 만든다.
 cout << "c++의 세계로 오십시요.";
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ead0b52-646e-48c4-9a25-b24d01e9373b/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/47807421/133383828-b5ef9f7e-703f-4cc5-a88c-5e9aca992058.png)
 
 - endl
 
