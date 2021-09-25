@@ -1,4 +1,4 @@
-# 풀이
+# my solution
 def solution(lottos, win_nums):
     answer = []
     count = lottos.count(0) # 0 갯수 파악
