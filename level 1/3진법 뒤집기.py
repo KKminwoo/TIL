@@ -9,7 +9,7 @@ def solution(n):
         answer += 3**(len(reverse)-1-i)*reverse[i]
     return answer
 
-# right solution
+# right solution(wow!)
 def solution(n):
     tmp = ''
     while n:
