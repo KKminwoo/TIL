@@ -9,17 +9,12 @@ def solution(scores):
             average += scores[j][i]
             list.append(scores[j][i])
         # 평균 구하기
-        print()
         if list[i] == max(list) and list.count(max(list))==1:
             average = (average - scores[i][i]) / (len(scores[i])-1)
-            print(list.count(min(list)),average,len(scores[i])-1)
         elif list[i] == min(list) and list.count(min(list))==1:
-            average = (average - scores[i][i]) / (len(scores[i])-1)
-            print(list.count(min(list)),average,len(scores[i])-1)
-            
+            average = (average - scores[i][i]) / (len(scores[i])-1)            
         else:
             average = average / len(scores[i])
-            print(list.count(min(list)),average,len(scores[i]))
         # 등급 나누기
         if average >= 90:
             answer += 'A'
