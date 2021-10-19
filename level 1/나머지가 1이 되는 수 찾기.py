@@ -1,3 +1,8 @@
 def solution(n):
     answer = 0
-    return answer
+    while True:
+        answer += 1
+        if n % answer == 1:
+            return answer
+        else:
+            pass
