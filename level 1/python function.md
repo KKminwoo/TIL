@@ -16,3 +16,10 @@ solution('Zbcdefg')
 if s.isdigit() == True:
     return True
 ```
+
+### enumerate 함수
+```python
+for i,num in enumerate(seoul):
+    print(i,num)
+    # i = 내용, num = 숫자
+'''
