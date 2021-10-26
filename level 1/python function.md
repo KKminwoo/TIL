@@ -9,3 +9,10 @@ def solution(s):
 solution('Zbcdefg')
 # gfedcbZ
 ```
+
+### isdigit 함수
+- 문자열이 정수인지 확인하는 함수
+```python
+if s.isdigit() == True:
+    return True
+```
