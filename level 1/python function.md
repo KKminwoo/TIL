@@ -10,10 +10,13 @@ solution('Zbcdefg')
 # gfedcbZ
 ```
 
-### isdigit 함수
-- 문자열이 정수인지 확인하는 함수
+### isdigit 함수, is_integer 함수
+- isdigit : 문자열이 정수인지 확인하는 함수
+- is_integer : float 값이 정수인지 확인하는 함수
 ```python
 if s.isdigit() == True:
+    return True
+if s.is_integer() == True:
     return True
 ```
 
@@ -38,4 +41,12 @@ print(ord("a"))
 ```python
 def digit_reverse(n):
     return list(map(int, str(n)))
+```
+
+### math import -> sqrt 함수
+- 제곱근 구해주는 함수
+```python
+import math
+def solution(n):
+    return math.sqrt(n)
 ```
