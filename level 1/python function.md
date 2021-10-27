@@ -31,3 +31,11 @@ for i,num in enumerate(seoul):
 print(chr(45))
 print(ord("a"))
 ```
+
+### map 함수
+- 리스트의 요소를 지정된 함수로 처리해주는 것
+- list(map(함수,리스트))
+```python
+def digit_reverse(n):
+    return list(map(int, str(n)))
+```
