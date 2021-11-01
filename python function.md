@@ -50,3 +50,10 @@ import math
 def solution(n):
     return math.sqrt(n)
 ```
+
+### split 함수
+- 공백 기준 문자열을 분리해 리스트로 저장하는 함수
+```python
+def solution(n):
+    return n.split()
+```
