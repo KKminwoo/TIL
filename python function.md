@@ -43,12 +43,14 @@ def digit_reverse(n):
     return list(map(int, str(n)))
 ```
 
-### math import -> sqrt 함수
-- 제곱근 구해주는 함수
+### math import
+- sqrt : 제곱근 구해주는 함수
+- gcd : 최대공약수
 ```python
 import math
-def solution(n):
+def solution(n,m):
     return math.sqrt(n)
+    return math.gcd(n,m)
 ```
 
 ### split 함수
