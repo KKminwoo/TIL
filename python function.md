@@ -46,6 +46,9 @@ def digit_reverse(n):
 ### math import
 - sqrt : 제곱근 구해주는 함수
 - gcd : 최대공약수
+- ceil : 올림
+- floor : 내림
+- round : 반올림
 ```python
 import math
 def solution(n,m):
