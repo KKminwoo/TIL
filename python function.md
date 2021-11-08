@@ -1,4 +1,4 @@
-## 0. heapq 라이브러리
+## heapq 라이브러리
 - 우선순위 큐 알고리즘
 - 이진 트리 기반의 최소 힙 자료구조를 모듈로 제공
 ```python
@@ -15,7 +15,28 @@ heapq.heappush(list,3)
 heapq.heappop(list,3)
 ```
 
-## 1. join 함수
+## deque 라이브러리
+- 양방향 큐 : 앞, 뒤 양쪽 방향에서 요소를 추가하거나 제거 가능
+- 일반적인 리스트가 O(n)이 소요되는 반면 deque는 O(1)로 접근 가능하다.
+```python
+from collections import deque
+
+deq = deque()
+
+# 앞에 요소 삽입
+deq.appendleft(10)
+
+# 끝에 요소 삽입
+deq.append(10)
+
+# 앞에 요소 제거
+deq.popleft(10)
+
+# 끝에 요소 제거
+deq.pop(10)
+```
+
+## join 함수
 
 - 리스트를 문자열로 합쳐주는 함수
 
@@ -27,7 +48,7 @@ solution('Zbcdefg')
 # gfedcbZ
 ```
 
-## 2. isdigit 함수, is_integer 함수
+## isdigit 함수, is_integer 함수
 - isdigit : 문자열이 정수인지 확인하는 함수
 - is_integer : float 값이 정수인지 확인하는 함수
 ```python
@@ -37,14 +58,14 @@ if s.is_integer() == True:
     return True
 ```
 
-## 3. enumerate 함수
+## enumerate 함수
 ```python
 for i,num in enumerate(seoul):
     print(i,num)
     # i = 내용, num = 숫자
 ```
 
-## 4. 아스키 코드 변화
+## 아스키 코드 변화
 - ord(문자) : 아스키 코드를 반환
 - chr(숫자) : 숫자에 맞는 아스키 코드를 반환
 ```python
@@ -52,7 +73,7 @@ print(chr(45))
 print(ord("a"))
 ```
 
-## 5. map 함수
+## map 함수
 - 리스트의 요소를 지정된 함수로 처리해주는 것
 - list(map(함수,리스트))
 ```python
@@ -60,7 +81,7 @@ def digit_reverse(n):
     return list(map(int, str(n)))
 ```
 
-## 6. math import
+## math import
 - sqrt : 제곱근 구해주는 함수
 - gcd : 최대공약수
 - ceil : 올림
@@ -73,7 +94,7 @@ def solution(n,m):
     return math.gcd(n,m)
 ```
 
-## 7. split 함수
+## split 함수
 - 공백 기준 문자열을 분리해 리스트로 저장하는 함수
 ```python
 def solution(n):
