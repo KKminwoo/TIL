@@ -30,10 +30,10 @@ deq.appendleft(10)
 deq.append(10)
 
 # 앞에 요소 제거
-deq.popleft(10)
+deq.popleft()
 
 # 끝에 요소 제거
-deq.pop(10)
+deq.pop()
 ```
 
 ## join 함수
