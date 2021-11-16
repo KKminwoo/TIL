@@ -1,22 +1,26 @@
-# not solve
-def solution(s):
-    num = s[0]
-    count = 0
-    word = ''
-    answer = []
-    for i in s:
-        if i==num:
-            count += 1
-            num = i
-            # print(i,"coount 1")
-        else:
-            if count <= 1:
-                word += num
-                # print(num'one arg')
-            else:
-                word = word + str(count) + num
-            num = i
-            count = 1
-        print(word)
+# not solving
+def solution(s): 
+    result=[] 
+    if len(s)==1: 
+        return 1 
+    for i in range(1, (len(s)//2)+1): 
+        b = '' 
+        cnt = 1 
+        tmp=s[:i] 
+        for j in range(i, len(s), i): 
+            if tmp==s[j:i+j]: 
+                cnt+=1 
             
-    return answer
+            else: 
+                if cnt!=1: 
+                    b = b + str(cnt)+tmp 
+                else: 
+                    b = b + tmp 
+                tmp=s[j:j+i] 
+                cnt = 1 
+        if cnt!=1: 
+            b = b + str(cnt) + tmp 
+        else: 
+            b = b + tmp 
+        result.append(len(b)) 
+    return min(result)
