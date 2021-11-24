@@ -35,17 +35,26 @@ deq.popleft()
 # 끝에 요소 제거
 deq.pop()
 ```
-
-## join 함수
-
-- 리스트를 문자열로 합쳐주는 함수
+## Counter 함수(collections 라이브러리)
+- 리스트에서 특정 요소 빈도 추출해내는 함수
 
 ```python
-def solution(s):
-    return ''.join(sorted(s, reverse=True))
+from collections import Counter
+m = [1,1,1,1,2,2,2,3,3,4]
+counter_list = Counter(m).most_common() # 빈도수가 큰 값대로 순서대로 딕셔너리 형태로 저장
+print(counter_list)
+# [(1,4),(2,3),(3,2),(4,1)]
+```
 
-solution('Zbcdefg')
-# gfedcbZ
+## Combinations 함수(itertools 라이브러리)
+- 리스트에서 조합을 뽑는 함수
+
+```python
+from itertools import combinations
+m = [1,2,3,4]
+for i in list(combination(m,2):
+    print(i)
+    # 리스트에서 2개 조합 출력
 ```
 
 ## isdigit 함수, is_integer 함수
