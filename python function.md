@@ -57,13 +57,19 @@ for i in list(combination(m,2):
     # 리스트에서 2개 조합 출력
 ```
 
-## isdigit 함수, is_integer 함수
+## isdigit 함수, is_integer 함수, isalpha 함수, isalnum 함수
 - isdigit : 문자열이 정수인지 확인하는 함수
 - is_integer : float 값이 정수인지 확인하는 함수
+- isalpha : 문자열이 알파벳인지 확인하는 함수
+- isalnum : 문자열이 알파벳 또는 정수인지 확인하는 함수
 ```python
-if s.isdigit() == True:
+if s.isdigit():
     return True
-if s.is_integer() == True:
+if s.is_integer():
+    return True
+if s.isalpha():
+    return True
+if s.isalnum():
     return True
 ```
 
