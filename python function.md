@@ -52,7 +52,7 @@ print(counter_list)
 ```python
 from itertools import combinations
 m = [1,2,3,4]
-for i in list(combination(m,2):
+for i in list(combinations(m,2):
     print(i)
     # 리스트에서 2개 조합 출력
 ```
