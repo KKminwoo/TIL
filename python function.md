@@ -46,15 +46,19 @@ print(counter_list)
 # [(1,4),(2,3),(3,2),(4,1)]
 ```
 
-## Combinations 함수(itertools 라이브러리)
-- 리스트에서 조합을 뽑는 함수
+## Combinations, Permutations 함수(itertools 라이브러리)
+- Combinations : 리스트에서 조합을 뽑는 함수
+- Permutations : 리스트에서 순열을 뽑는 함수
 
 ```python
-from itertools import combinations
+from itertools import combinations, permutations
 m = [1,2,3,4]
 for i in list(combinations(m,2):
     print(i)
     # 리스트에서 2개 조합 출력
+for j in list(permutations(m,2):
+    print(j)
+    # 리스트에서 2개 순열 
 ```
 
 ## isdigit 함수, is_integer 함수, isalpha 함수, isalnum 함수
