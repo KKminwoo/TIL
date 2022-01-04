@@ -80,6 +80,13 @@ for i,num in enumerate(seoul):
     # i = 내용, num = 숫자
 ```
 
+## filter & lambda 함수
+```python
+list = [1,2,3,4,5,3]
+print(list(filter(lambda(x:list[x]==3,range(len(list)))))
+# [2,5]
+```
+
 ## 아스키 코드 변화
 - ord(문자) : 아스키 코드를 반환
 - chr(숫자) : 숫자에 맞는 아스키 코드를 반환
