@@ -16,6 +16,59 @@ FIFO(First In, First Out), 줄을 선 사람이 제일 먼저 입장하는 것�
 
 ```python
 import queue
-
 data_queue = queue.Queue()
+
+# 데이터 넣기
+data_queue.put("hello")
+data_queue.put(1)
+
+# 데이터 빼기
+data_queue.get()
+# -> 'hello'
+```
+
+### 3-2 LifoQueue()로 큐 만들기(LIFO Last In First Out)
+
+```python
+import queue
+data_queue = queue.LifoQueue()
+
+data_queue.put('hello')
+data_queue.put(1)
+
+data_queue.get()
+# -> 1
+```
+
+### **3-3 PriorityQueue()로 큐 만들기**
+
+```python
+import queue
+data_queue = queue.PriorityQueue()
+
+data_queue.put((10,"korea")) # 튜블 형식으로 넣어줌
+data_queue.put((5,1))
+data_queue.put((15,'china'))
+
+data_queue.qsize()
+# 3
+
+data_queue.get() # 우선순위가 높은(숫자가 낮은) 값을 출력
+# (5,1)
+data_queue.get()
+# (10,"korea")
+```
+
+### ※ 리스트 변수로 큐를 다루는 기능 구현
+
+```python
+queue_list = list()
+
+def enqeue(data):
+	queue_list.append(data)
+
+def deqeue():
+	data = queue_list[0]
+	del queue_list[0]
+	return data
 ```
