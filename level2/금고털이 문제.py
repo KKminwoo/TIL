@@ -1,6 +1,7 @@
 num = list(map(int, input().split())) # W, N 입력
 count = []
 weight = []
+ans = 0
 for i in range(num[1]):
     index = list(map(int, input().split()))
     weight.append(index[0]) # [90, 70]
@@ -13,7 +14,7 @@ while num[0] > 0:
         print(ans)
 
     else:
-        ans = weight[count.index(max(count))] * max(count)
+        ans += weight[count.index(max(count))] * max(count)
         num[0] -= weight[count.index(max(count))]
         weight.remove(weight[count.index(max(count))])
         count.remove(max(count))
