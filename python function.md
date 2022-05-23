@@ -126,3 +126,10 @@ def solution(n,m):
 def solution(n):
     return n.split()
 ```
+
+## set 함수
+- 리스트를 집합으로 변환하는 함수
+```python
+a = [1,2,3,3,4]    
+set(a) # {1,2,3,4}
+```
