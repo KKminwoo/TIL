@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "configurations": [
+    {
+      "name": "g++.exe - 활성 파일 빌드 및 디버그",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+      "args": [],
+      // tasks.json에서 설정한 빌드 task의 label
+      "preLaunchTask": "g++ build active file",
+      "terminal": "integrated"
+    }
+  ]
+}
