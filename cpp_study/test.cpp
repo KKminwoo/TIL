@@ -1,20 +1,22 @@
 #include <iostream>
-using namespace std;
-
-// 구조체 배열
-struct inflatable
-{
-	char name[20];
-	float volume;
-	double price;
-};
+#include <cctype>
 int main() {
-	inflatable guests[2] = 
-	{
-		{"Bambi",0.5,21.99},	// 배열에 있는 첫 번째 구조체
-		{"Godzilla",2000,565.99}// 배열에 있는 그 다음 구조체
-	};					
+    using namespace std;
+    cout << "input text, end with @\n";
+    char ch;
+    int whitespace = 0;
+    int digits = 0;
+    int chars = 0;
+    int punct = 0;
+    int others = 0;
 
-	cout << guests[0].name << "와 " << guests[1].name << "의 부피를 합하면 " << guests[0].volume + guests[1].volume << "이다.";
-	return 0;
-}
+    cin.get(ch);
+    while (ch != '@')
+    {
+        if (isalpha(ch))
+            chars++;
+        else if (isspace(ch))
+            whites
+    }
+    
+ }
